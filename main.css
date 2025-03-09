@@ -1,17 +1,81 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
 .background{
     background-color: #141619;
-    width: 1440px;
+    position: relative;
+    min-width: 1440px;
+    width: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    min-width: 1440px;
+    width: 100%;
+    height: 88px;
+    top: 0;
+    border-bottom: 1px solid #FFFFFF40;
+}
+#header .menu {
+    position: relative;
+    font-size: 15px;
+    width: 874.671875px;
+    height: 44px;
+    top: 22px;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.menu li {
+    display: inline;
+    padding: 0px 12px;
+}
+.button {
+    width: 133.69px;
+}
+.button a {
+    display: flex;
+    position: relative;
+    top: 33px;
+    font-size: 15px;
+    left: 11px;
+}
+.button .icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    right: 11px;
+}
+#header .logo {
+    position: relative;
+    width: 180.78125px;
+    height: 42px;
+    top: 22.3px;
+}
+#main {
+    min-width: 1440px;
+    width: 100%;
     height: 6214.390625px;
+    position: relative;
 }
 #footer {
-    background-color: #141619;
-    width:fit-content;
-    height: fit-content;
+    display: flex;
+    justify-content: center;
+    color: #BCBCBC;
     border-top: 1px solid #FFFFFF40;
     padding-top: 97px;
     padding-bottom: 64px;
-    padding-left: 160px;
-    padding-right: 160px;
 }
 #footer .end {
     display: flex;
@@ -35,24 +99,18 @@
     flex-direction: column;
 }
 .left .brand {
-    color: #FFFFFF;
-    font-family: sans-serif;
-    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.49px;
 }
 .left .more {
     display: flex;
-    color: #BCBCBC;
     width: fit-content;
     height: 64px;
     padding-top: 5px;
     padding-right: 33.81px;
     padding-bottom: 5px;
     row-gap: 10px;
-    font-family: sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     flex-direction: column;
@@ -63,15 +121,20 @@
 }
 .end .down {
     display: flex;
-    color: #BCBCBC;
     position: relative;
     width: fit-content;
     height: fit-content;
     top: 60px;
     left: 32px;
     column-gap: 611.78px;
-    font-family: sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 18.4px;
+}
+#footer a:-webkit-any-link {
+    color: #BCBCBC;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: #FFFFFF;
+    text-decoration: none;
 }
